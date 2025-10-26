@@ -1,0 +1,532 @@
+﻿msgid ""
+msgstr ""
+"Project-Id-Version: MirahelpBLEToolkit UI\n"
+"Language: en_US\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "axis.rssi.dbm"
+msgstr "RSSI (dBm)"
+
+msgid "axis.time.seconds"
+msgstr "Time (s)"
+
+msgid "button.device"
+msgstr "Device"
+
+msgid "button.refresh"
+msgstr "Refresh"
+
+msgid "button.signal"
+msgstr "Signal"
+
+msgid "button.start.capture"
+msgstr "Start capture"
+
+msgid "button.stop.capture"
+msgstr "Stop capture"
+
+msgid "button.theme.dark"
+msgstr "Dark theme"
+
+msgid "button.theme.light"
+msgstr "Light theme"
+
+msgid "column.direction"
+msgstr "Dir"
+
+msgid "column.kind"
+msgstr "Kind"
+
+msgid "column.length"
+msgstr "Len"
+
+msgid "column.preview"
+msgstr "Preview"
+
+msgid "column.time"
+msgstr "Time"
+
+msgid "footer.default"
+msgstr "Press Esc to quit"
+
+msgid "hint.characteristic.caption"
+msgstr "Choose a characteristic"
+
+msgid "hint.characteristic.enter.uuid"
+msgstr "Enter a characteristic UUID"
+
+msgid "hint.characteristic.list.caption"
+msgstr "Select a characteristic from the list"
+
+msgid "hint.choose.from.list"
+msgstr "Choose from list"
+
+msgid "hint.enter.payload.prefix"
+msgstr "Enter payload"
+
+msgid "hint.enter.response.char.uuid"
+msgstr "Enter response characteristic UUID"
+
+msgid "hint.enter.uuid"
+msgstr "Enter UUID"
+
+msgid "hint.format.base64"
+msgstr "Base64"
+
+msgid "hint.format.hex"
+msgstr "Hex"
+
+msgid "hint.format.utf8"
+msgstr "UTF-8"
+
+msgid "hint.list.characteristics"
+msgstr "List characteristics"
+
+msgid "hint.list.services"
+msgstr "List services"
+
+msgid "hint.payload.format.caption"
+msgstr "Select payload format"
+
+msgid "hint.response.caption"
+msgstr "Response"
+
+msgid "hint.response.characteristic.caption"
+msgstr "Response characteristic"
+
+msgid "hint.response.none"
+msgstr "None"
+
+msgid "hint.response.notify"
+msgstr "Notify"
+
+msgid "hint.response.read"
+msgstr "Read"
+
+msgid "hint.same.as.write"
+msgstr "Same as write characteristic"
+
+msgid "hint.service.caption"
+msgstr "Choose a service"
+
+msgid "hint.service.enter.uuid"
+msgstr "Enter a service UUID"
+
+msgid "hint.service.list.caption"
+msgstr "Select a service from the list"
+
+msgid "hint.timeout.ms"
+msgstr "Enter timeout (ms)"
+
+msgid "hint.write.type.caption"
+msgstr "Select write type"
+
+msgid "hint.write.with.response"
+msgstr "Write with response"
+
+msgid "hint.write.without.response"
+msgstr "Write without response"
+
+msgid "label.address"
+msgstr "MAC Address"
+
+msgid "label.apply"
+msgstr "Apply"
+
+msgid "label.ascii"
+msgstr "ASCII"
+
+msgid "label.average"
+msgstr "Average"
+
+msgid "label.characteristic"
+msgstr "Characteristic"
+
+msgid "label.clear"
+msgstr "Clear"
+
+msgid "label.color"
+msgstr "Color"
+
+msgid "label.device.prefix"
+msgstr "Device"
+
+msgid "label.direction"
+msgstr "Direction"
+
+msgid "label.filter"
+msgstr "Filter"
+
+msgid "label.first.seen"
+msgstr "First seen"
+
+msgid "label.format"
+msgstr "Format"
+
+msgid "label.hex"
+msgstr "Hex"
+
+msgid "label.id"
+msgstr "ID"
+
+msgid "label.in"
+msgstr "In"
+
+msgid "label.kind"
+msgstr "Kind"
+
+msgid "label.last.seen"
+msgstr "Last seen"
+
+msgid "label.length"
+msgstr "Length"
+
+msgid "label.manufacturer"
+msgstr "Manufacturer"
+
+msgid "label.milliseconds.suffix"
+msgstr " ms"
+
+msgid "label.name"
+msgstr "Name"
+
+msgid "label.out"
+msgstr "Out"
+
+msgid "label.packets.count"
+msgstr "Packets"
+
+msgid "label.payload"
+msgstr "Payload"
+
+msgid "label.period"
+msgstr "Period"
+
+msgid "label.read"
+msgstr "Read"
+
+msgid "label.rssi"
+msgstr "RSSI"
+
+msgid "label.select.all"
+msgstr "Select all"
+
+msgid "label.service"
+msgstr "Service"
+
+msgid "label.status"
+msgstr "Status"
+
+msgid "label.strong"
+msgstr "Strong"
+
+msgid "label.target"
+msgstr "Target"
+
+msgid "label.text"
+msgstr "Text"
+
+msgid "label.timeout"
+msgstr "Timeout"
+
+msgid "label.uuid"
+msgstr "UUID"
+
+msgid "label.weak"
+msgstr "Weak"
+
+msgid "label.write"
+msgstr "Write"
+
+msgid "label.write.type"
+msgstr "Write type"
+
+msgid "menu.back"
+msgstr "Back"
+
+msgid "menu.communication"
+msgstr "Communication"
+
+msgid "menu.connect"
+msgstr "Connect"
+
+msgid "menu.copy"
+msgstr "Copy"
+
+msgid "menu.continue"
+msgstr "Continue"
+
+msgid "menu.disconnect"
+msgstr "Disconnect"
+
+msgid "menu.fetch"
+msgstr "Fetch"
+
+msgid "menu.gatt.session.info"
+msgstr "GATT session info"
+
+msgid "menu.heartbeat.enabled"
+msgstr "Heartbeat enabled"
+
+msgid "menu.heartbeat.probe.now"
+msgstr "Probe now"
+
+msgid "menu.list.services"
+msgstr "List services"
+
+msgid "menu.messages.map"
+msgstr "Messages"
+
+msgid "menu.reconnect.automatically"
+msgstr "Reconnect automatically"
+
+msgid "menu.run"
+msgstr "Run"
+
+msgid "menu.subscribe"
+msgstr "Subscribe"
+
+msgid "menu.unsubscribe"
+msgstr "Unsubscribe"
+
+msgid "menu.write.read.wizard"
+msgstr "Write/Read wizard"
+
+msgid "period.15m"
+msgstr "15 min"
+
+msgid "period.15s"
+msgstr "15 s"
+
+msgid "period.1m"
+msgstr "1 min"
+
+msgid "period.2m"
+msgstr "2 min"
+
+msgid "period.30m"
+msgstr "30 min"
+
+msgid "period.30s"
+msgstr "30 s"
+
+msgid "period.5m"
+msgstr "5 min"
+
+msgid "period.5s"
+msgstr "5 s"
+
+msgid "period.60m"
+msgstr "60 min"
+
+msgid "prompt.enter.number.back"
+msgstr "Enter a number. Backspace to clear."
+
+msgid "prompt.enter.selection.or.value"
+msgstr "Enter a selection or a value"
+
+msgid "prompt.select.option"
+msgstr "Select an option"
+
+msgid "prompt.select.value.prefix"
+msgstr "Selected: "
+
+msgid "status.connectable.directed"
+msgstr "Connectable"
+
+msgid "status.connectable.undirected"
+msgstr "Connectable"
+
+msgid "status.extended"
+msgstr "Extended"
+
+msgid "status.nonconnectable.undirected"
+msgstr "Non connectable"
+
+msgid "status.scan.response"
+msgstr "Scan response"
+
+msgid "status.scannable.undirected"
+msgstr "Scannable"
+
+msgid "text.ascii.prefix"
+msgstr "ASCII"
+
+msgid "text.connected"
+msgstr "Connected"
+
+msgid "text.connect.failed"
+msgstr "Connection failed"
+
+msgid "text.connecting"
+msgstr "Connecting"
+
+msgid "text.device.unavailable"
+msgstr "Device unavailable"
+
+msgid "text.disconnected"
+msgstr "Disconnected"
+
+msgid "text.enumerating.services"
+msgstr "Enumerating services..."
+
+msgid "text.esc.quit"
+msgstr "Press Esc to quit"
+
+msgid "text.executing.write"
+msgstr "Executing write..."
+
+msgid "text.gap.name"
+msgstr "GAP name"
+
+msgid "text.gap.name.read.failed"
+msgstr "GAP name read failed"
+
+msgid "text.hex.prefix"
+msgstr "Hex"
+
+msgid "text.invalid.payload"
+msgstr "Invalid payload"
+
+msgid "text.invalid.uuid.prefix"
+msgstr "Invalid UUID"
+
+msgid "text.len.prefix"
+msgstr "Len"
+
+msgid "text.message.not.found"
+msgstr "Message not found"
+
+msgid "text.no.device.selected"
+msgstr "No device selected"
+
+msgid "text.notify.len.prefix"
+msgstr "Notify len"
+
+msgid "text.notify.timeout"
+msgstr "Notify timeout"
+
+msgid "text.querying.characteristics"
+msgstr "Querying characteristics..."
+
+msgid "text.querying.services"
+msgstr "Querying services..."
+
+msgid "text.read.prefix"
+msgstr "Read"
+
+msgid "text.reading.gap.name"
+msgstr "Reading GAP name..."
+
+msgid "text.removed.count"
+msgstr "Removed"
+
+msgid "text.running"
+msgstr "Running"
+
+msgid "text.services.count"
+msgstr "Services"
+
+msgid "text.subscribing.all"
+msgstr "Subscribing to all..."
+
+msgid "text.subscribed.count"
+msgstr "Subscribed"
+
+msgid "text.unknown"
+msgstr "Unknown"
+
+msgid "text.waiting.notify"
+msgstr "Waiting for notify..."
+
+msgid "text.write.prefix"
+msgstr "Write"
+
+msgid "title.characteristic.detail"
+msgstr "Characteristic detail"
+
+msgid "title.characteristics"
+msgstr "Characteristics"
+
+msgid "title.command"
+msgstr "Command"
+
+msgid "title.connect"
+msgstr "Connect"
+
+msgid "title.details"
+msgstr "Details"
+
+msgid "title.device.signal"
+msgstr "Device signal"
+
+msgid "title.heartbeat"
+msgstr "Heartbeat"
+
+msgid "title.help"
+msgstr "Help"
+
+msgid "title.home"
+msgstr "Home"
+
+msgid "title.message.detail"
+msgstr "Message detail"
+
+msgid "title.messages"
+msgstr "Messages"
+
+msgid "title.notify.characteristics"
+msgstr "Notify: Characteristics"
+
+msgid "title.notify.service.prefix"
+msgstr "Notify service"
+
+msgid "title.notify.services"
+msgstr "Notify: Services"
+
+msgid "title.notify.services.prefix"
+msgstr "Notify services"
+
+msgid "title.services"
+msgstr "Services"
+
+msgid "title.services.panel"
+msgstr "Services"
+
+msgid "title.settings"
+msgstr "Settings"
+
+msgid "title.signal.strength.all.devices"
+msgstr "Signal strength (all devices)"
+
+msgid "title.subscriptions"
+msgstr "Subscriptions"
+
+msgid "title.write.read.characteristic"
+msgstr "Write/Read: Characteristic"
+
+msgid "title.write.read.operation"
+msgstr "Write/Read: Operation"
+
+msgid "title.write.read.prefix"
+msgstr "Write/Read"
+
+msgid "title.write.read.service"
+msgstr "Write/Read: Service"
+
+msgid "title.write.read.wizard"
+msgstr "Write/Read wizard"
+
+msgid "value.no"
+msgstr "No"
+
+msgid "value.with.response.short"
+msgstr "WithResponse"
+
+msgid "value.without.response.short"
+msgstr "WithoutResponse"
+
+msgid "value.yes"
+msgstr "Yes"

@@ -1,0 +1,25 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:local="using:MirahelpBLEToolkit"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="MirahelpBLEToolkit.CommunicationWidget">
+	<Grid x:Name="RootHost" Background="Transparent">
+		<Grid RowDefinitions="*,Auto" Margin="8">
+			<ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+				<StackPanel x:Name="ContentPanel" Margin="16" Spacing="12" HorizontalAlignment="Stretch"/>
+			</ScrollViewer>
+
+			<Grid Grid.Row="1" ColumnDefinitions="Auto,*,Auto" Margin="0,8,0,0">
+				<Button x:Name="BtnBack" Grid.Column="0" MinWidth="120"/>
+				<Grid Grid.Column="1"/>
+				<Button x:Name="BtnNext" Grid.Column="2" MinWidth="120"/>
+			</Grid>
+		</Grid>
+
+		<Grid x:Name="LoadingOverlay" IsVisible="False" Background="#00000000">
+			<local:MetroLoadingAnimation HorizontalAlignment="Center" VerticalAlignment="Center"/>
+		</Grid>
+	</Grid>
+</UserControl>

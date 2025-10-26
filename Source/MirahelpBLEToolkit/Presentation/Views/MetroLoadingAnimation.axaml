@@ -1,0 +1,20 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="MirahelpBLEToolkit.MetroLoadingAnimation">
+	<Grid>
+		<StackPanel x:Name="RootPanel"
+					 Orientation="Horizontal"
+					 Spacing="10"
+					 HorizontalAlignment="Center"
+					 VerticalAlignment="Center">
+			<Ellipse x:Name="Dot1" Width="10" Height="10"/>
+			<Ellipse x:Name="Dot2" Width="10" Height="10"/>
+			<Ellipse x:Name="Dot3" Width="10" Height="10"/>
+			<Ellipse x:Name="Dot4" Width="10" Height="10"/>
+			<Ellipse x:Name="Dot5" Width="10" Height="10"/>
+		</StackPanel>
+	</Grid>
+</UserControl>

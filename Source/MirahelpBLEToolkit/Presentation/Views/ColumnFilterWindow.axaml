@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="MirahelpBLEToolkit.ColumnFilterWindow">
+	<Grid RowDefinitions="Auto,Auto,*,Auto" Margin="8">
+		<TextBlock x:Name="Caption" FontWeight="Bold"/>
+		<StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="8" Margin="0,6,0,6">
+			<Button x:Name="BtnAll" Content="Select all" MinWidth="100"/>
+			<Button x:Name="BtnNone" Content="Clear all" MinWidth="100"/>
+		</StackPanel>
+		<ScrollViewer Grid.Row="2">
+			<StackPanel x:Name="ListPanel" Spacing="4"/>
+		</ScrollViewer>
+		<Grid Grid.Row="3" ColumnDefinitions="*,Auto">
+			<TextBlock Text="Checked values are included." VerticalAlignment="Center"/>
+			<Button x:Name="BtnApply" Grid.Column="1" MinWidth="100" Content="Apply"/>
+		</Grid>
+	</Grid>
+</UserControl>

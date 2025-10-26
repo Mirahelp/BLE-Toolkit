@@ -1,0 +1,45 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	 		 xmlns:local="using:MirahelpBLEToolkit"
+	 		 x:Class="MirahelpBLEToolkit.ConnectWidget">
+	<Grid x:Name="RootHost" Background="Transparent">
+		<Grid RowDefinitions="Auto,*">
+			<Grid ColumnDefinitions="Auto,8,*,Auto" RowDefinitions="Auto">
+				<Border x:Name="StatusDot" Width="14" Height="14" CornerRadius="7" VerticalAlignment="Center"/>
+				<TextBlock Grid.Column="2" x:Name="TxtStatus" VerticalAlignment="Center"/>
+				<Button Grid.Column="3" x:Name="BtnToggle" MinWidth="120"/>
+			</Grid>
+
+			<Grid Grid.Row="1">
+				<Border x:Name="UptimeCircle"
+						Width="200"
+						Height="200"
+						CornerRadius="100"
+						BorderThickness="2"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						IsVisible="False">
+					<Grid>
+						<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="6">
+							<TextBlock x:Name="TxtUptimeCaption"
+									   Text="Connected"
+									   FontSize="14"
+									   HorizontalAlignment="Center"/>
+							<TextBlock x:Name="TxtUptimeBig"
+									   Text="00:00"
+									   FontSize="36"
+									   FontWeight="SemiBold"
+									   Width="160"
+									   TextAlignment="Center"
+									   HorizontalAlignment="Center"/>
+						</StackPanel>
+					</Grid>
+				</Border>
+			</Grid>
+		</Grid>
+
+		<Grid x:Name="LoadingOverlay" IsVisible="False" Background="#00000000">
+			<local:MetroLoadingAnimation HorizontalAlignment="Center" VerticalAlignment="Center"/>
+		</Grid>
+	</Grid>
+</UserControl>

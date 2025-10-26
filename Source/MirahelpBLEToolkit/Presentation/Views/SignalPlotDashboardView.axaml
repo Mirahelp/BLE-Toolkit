@@ -1,0 +1,45 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:strings="clr-namespace:MirahelpBLEToolkit.Constants"
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 x:Class="MirahelpBLEToolkit.SignalPlotDashboardView">
+	<Grid RowDefinitions="*,Auto">
+		<Border x:Name="PlotBorder"
+				Grid.Row="0"
+				Margin="8"
+				BorderBrush="#40808080"
+				BorderThickness="1"
+				CornerRadius="4"
+				Background="{DynamicResource ThemeBackgroundBrush}">
+			<Grid>
+				<Canvas x:Name="CanvasArea" />
+			</Grid>
+		</Border>
+
+		<ScrollViewer Grid.Row="1"
+					  HorizontalScrollBarVisibility="Auto"
+					  VerticalScrollBarVisibility="Disabled"
+					  Margin="8,0,8,8">
+			<DockPanel LastChildFill="False">
+
+				<StackPanel Orientation="Horizontal" DockPanel.Dock="Left" Spacing="8">
+					<TextBlock x:Name="LblPeriodCaption" VerticalAlignment="Center" />
+					<ComboBox x:Name="CmbTimeWindow" MinWidth="120" />
+					<Button x:Name="BtnFilterDevices" MinWidth="120" />
+				</StackPanel>
+
+				<StackPanel Orientation="Horizontal" DockPanel.Dock="Right" Spacing="8">
+					<Border Width="14" Height="14" CornerRadius="2" Background="#3300B000" />
+					<TextBlock x:Name="LblLegendStrong" />
+					<Border Width="14" Height="14" CornerRadius="2" Background="#33FF9900" Margin="12,0,0,0" />
+					<TextBlock x:Name="LblLegendAverage" />
+					<Border Width="14" Height="14" CornerRadius="2" Background="#33E00000" Margin="12,0,0,0" />
+					<TextBlock x:Name="LblLegendWeak" />
+				</StackPanel>
+
+			</DockPanel>
+		</ScrollViewer>
+	</Grid>
+</UserControl>

@@ -1,0 +1,39 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 x:Class="MirahelpBLEToolkit.DeviceDetailsWidget">
+	<Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="160,*">
+		<TextBlock Grid.Row="0" Grid.Column="0" x:Name="LblMac" FontWeight="Bold"/>
+		<TextBlock Grid.Row="0" Grid.Column="1" x:Name="TxtMac"/>
+		<TextBlock Grid.Row="1" Grid.Column="0" x:Name="LblFirst" FontWeight="Bold"/>
+		<TextBlock Grid.Row="1" Grid.Column="1" x:Name="TxtFirst"/>
+
+		<TextBlock Grid.Row="2" Grid.Column="0" x:Name="LblLast" FontWeight="Bold"/>
+		<TextBlock Grid.Row="2" Grid.Column="1" x:Name="TxtLast"/>
+
+		<TextBlock Grid.Row="3" Grid.Column="0" x:Name="LblPackets" FontWeight="Bold"/>
+		<TextBlock Grid.Row="3" Grid.Column="1" x:Name="TxtPackets"/>
+
+		<TextBlock Grid.Row="4" Grid.Column="0" x:Name="LblRssi" FontWeight="Bold"/>
+		<TextBlock Grid.Row="4" Grid.Column="1" x:Name="TxtRssi"/>
+
+		<TextBlock Grid.Row="5" Grid.Column="0" x:Name="LblStatus" FontWeight="Bold"/>
+		<TextBlock Grid.Row="5" Grid.Column="1" x:Name="TxtType"/>
+
+		<TextBlock Grid.Row="6" Grid.Column="0" x:Name="LblName" FontWeight="Bold"/>
+		<TextBlock Grid.Row="6" Grid.Column="1" x:Name="TxtName"/>
+
+		<TextBlock Grid.Row="7" Grid.Column="0" x:Name="LblManufacturer" FontWeight="Bold"/>
+		<TextBlock Grid.Row="7" Grid.Column="1" x:Name="TxtManufacturer"/>
+
+		<TextBlock Grid.Row="8" Grid.Column="0" x:Name="LblUuid" FontWeight="Bold"/>
+		<TextBlock Grid.Row="8" Grid.Column="1" x:Name="TxtUuid"/>
+
+		<TextBlock Grid.Row="9" Grid.Column="0" x:Name="LblColor" FontWeight="Bold"/>
+		<StackPanel Grid.Row="9" Grid.Column="1" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+			<Border x:Name="ColorDot" Width="14" Height="14" CornerRadius="7" VerticalAlignment="Center"/>
+		</StackPanel>
+	</Grid>
+</UserControl>

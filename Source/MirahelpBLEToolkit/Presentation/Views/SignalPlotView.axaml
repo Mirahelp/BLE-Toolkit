@@ -1,0 +1,60 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:strings="clr-namespace:MirahelpBLEToolkit.Constants"
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 x:Class="MirahelpBLEToolkit.SignalPlotView">
+	<Grid RowDefinitions="*,Auto,Auto">
+		<Border Grid.Row="0"
+				Margin="8"
+				BorderBrush="#40808080"
+				BorderThickness="1"
+				CornerRadius="4"
+				Background="{DynamicResource ThemeBackgroundBrush}">
+			<Grid>
+				<Canvas x:Name="CanvasArea" />
+			</Grid>
+		</Border>
+		<Border x:Name="FilterPanel"
+				Grid.Row="1"
+				Margin="8,0,8,4"
+				BorderThickness="1"
+				CornerRadius="6"
+				BorderBrush="#40808080"
+				Background="{DynamicResource ThemeBackgroundBrush}"
+				IsVisible="False">
+			<Grid RowDefinitions="Auto,*,Auto" Margin="8">
+				<StackPanel Orientation="Horizontal" Spacing="8">
+					<Button x:Name="BtnSelectAll" Content="{x:Static strings:UiCatalogKeys.LabelSelectAll}" MinWidth="100" />
+					<Button x:Name="BtnClearAll" Content="{x:Static strings:UiCatalogKeys.LabelClear}" MinWidth="100" />
+				</StackPanel>
+				<ScrollViewer Grid.Row="1" Margin="0,6,0,6" Height="160">
+					<WrapPanel x:Name="FilterList" ItemWidth="280" ItemHeight="30" />
+				</ScrollViewer>
+				<Grid Grid.Row="2" ColumnDefinitions="*,Auto">
+					<TextBlock Text="{x:Static strings:UiCatalogKeys.LabelStatus}" VerticalAlignment="Center" />
+					<Button x:Name="BtnApplyFilter" Grid.Column="1" MinWidth="100" Content="{x:Static strings:UiCatalogKeys.LabelApply}" />
+				</Grid>
+			</Grid>
+		</Border>
+
+		<ScrollViewer Grid.Row="2"
+					  HorizontalScrollBarVisibility="Auto"
+					  VerticalScrollBarVisibility="Disabled"
+					  Margin="8,0,8,8">
+			<StackPanel Orientation="Horizontal" Spacing="8">
+				<TextBlock Text="{x:Static strings:UiCatalogKeys.LabelPeriod}" VerticalAlignment="Center" />
+				<ComboBox x:Name="CmbTimeWindow" MinWidth="120" />
+				<Button x:Name="BtnDeviceFilter" Content="{x:Static strings:UiCatalogKeys.LabelFilter}" MinWidth="120" />
+				<StackPanel Orientation="Horizontal" Spacing="8" Margin="16,0,0,0" VerticalAlignment="Center">
+					<Border Width="14" Height="14" CornerRadius="2" Background="#3300B000" />
+					<TextBlock Text="{x:Static strings:UiCatalogKeys.LabelStrong}" />
+					<Border Width="14" Height="14" CornerRadius="2" Background="#33FF9900" Margin="12,0,0,0" />
+					<TextBlock Text="{x:Static strings:UiCatalogKeys.LabelAverage}" />
+					<Border Width="14" Height="14" CornerRadius="2" Background="#33E00000" Margin="12,0,0,0" />
+					<TextBlock Text="{x:Static strings:UiCatalogKeys.LabelWeak}" />
+				</StackPanel>
+			</StackPanel>
+		</ScrollViewer>
+     </Grid> </UserControl>

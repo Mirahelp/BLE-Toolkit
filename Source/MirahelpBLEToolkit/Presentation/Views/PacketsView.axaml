@@ -1,0 +1,90 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 x:Class="MirahelpBLEToolkit.PacketsView">
+	<Grid x:Name="RootHost" Background="Transparent">
+		<Grid RowDefinitions="*,Auto" Margin="8">
+			<ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+				<StackPanel x:Name="ContentPanel" Margin="16" Spacing="12" HorizontalAlignment="Stretch">
+					<ScrollViewer x:Name="ListScrollViewer"
+								  HorizontalScrollBarVisibility="Disabled"
+								  VerticalScrollBarVisibility="Disabled">
+						<StackPanel x:Name="TablePanel"
+									Orientation="Vertical"
+									Spacing="4">
+							<Grid x:Name="HeaderGrid" ColumnDefinitions="100,120,180,90,140,*">
+								<Border Grid.Column="0" Background="{DynamicResource ThemeControlLowBrush}" Padding="6,4">
+									<TextBlock x:Name="HdrTime" FontWeight="Bold"/>
+								</Border>
+								<Border Grid.Column="1" Background="{DynamicResource ThemeControlLowBrush}" Padding="6,4">
+									<TextBlock x:Name="HdrDirection" FontWeight="Bold"/>
+								</Border>
+								<Border Grid.Column="2" Background="{DynamicResource ThemeControlLowBrush}" Padding="6,4">
+									<TextBlock x:Name="HdrKind" FontWeight="Bold"/>
+								</Border>
+								<Border Grid.Column="3" Background="{DynamicResource ThemeControlLowBrush}" Padding="6,4">
+									<TextBlock x:Name="HdrLength" FontWeight="Bold"/>
+								</Border>
+								<Border Grid.Column="4" Background="{DynamicResource ThemeControlLowBrush}" Padding="6,4">
+									<TextBlock x:Name="HdrAddress" FontWeight="Bold"/>
+								</Border>
+								<Border Grid.Column="5" Background="{DynamicResource ThemeControlLowBrush}" Padding="6,4">
+									<TextBlock x:Name="HdrHex" FontWeight="Bold"/>
+								</Border>
+							</Grid>
+
+							<StackPanel x:Name="Rows" Orientation="Vertical" Spacing="2"/>
+						</StackPanel>
+					</ScrollViewer>
+
+					<ScrollViewer x:Name="DetailScrollViewer"
+								  HorizontalScrollBarVisibility="Disabled"
+								  VerticalScrollBarVisibility="Disabled"
+								  IsVisible="False">
+						<Grid x:Name="DetailGrid"
+							  ColumnDefinitions="180,*"
+							  RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+							  RowSpacing="6">
+							<TextBlock x:Name="LblTime" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+							<TextBlock x:Name="DtlTime" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"/>
+
+							<TextBlock x:Name="LblDirection" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+							<TextBlock x:Name="DtlDirection" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"/>
+
+							<TextBlock x:Name="LblKind" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+							<TextBlock x:Name="DtlKind" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"/>
+
+							<TextBlock x:Name="LblAddress" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
+							<TextBlock x:Name="DtlAddress" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"/>
+
+							<TextBlock x:Name="LblService" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center"/>
+							<TextBlock x:Name="DtlService" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center"/>
+
+							<TextBlock x:Name="LblCharacteristic" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center"/>
+							<TextBlock x:Name="DtlCharacteristic" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center"/>
+
+							<TextBlock x:Name="LblLength" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center"/>
+							<TextBlock x:Name="DtlLength" Grid.Row="6" Grid.Column="1" VerticalAlignment="Center"/>
+
+							<TextBlock x:Name="LblHex" Grid.Row="7" Grid.Column="0" VerticalAlignment="Top"/>
+							<TextBlock x:Name="DtlHex" Grid.Row="7" Grid.Column="1" VerticalAlignment="Top" TextWrapping="Wrap"/>
+
+							<TextBlock x:Name="LblAscii" Grid.Row="8" Grid.Column="0" VerticalAlignment="Top"/>
+							<TextBlock x:Name="DtlAscii" Grid.Row="8" Grid.Column="1" VerticalAlignment="Top" TextWrapping="Wrap"/>
+
+							<TextBlock x:Name="LblText" Grid.Row="9" Grid.Column="0" VerticalAlignment="Top"/>
+							<TextBlock x:Name="DtlText" Grid.Row="9" Grid.Column="1" VerticalAlignment="Top" TextWrapping="Wrap"/>
+						</Grid>
+					</ScrollViewer>
+				</StackPanel>
+			</ScrollViewer>
+
+			<Grid Grid.Row="1" ColumnDefinitions="Auto,*,Auto" Margin="0,8,0,0">
+				<Button x:Name="BtnBack" Grid.Column="0" MinWidth="120"/>
+				<Grid Grid.Column="1"/>
+			</Grid>
+		</Grid>
+	</Grid>
+</UserControl> 

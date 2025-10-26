@@ -1,0 +1,28 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:local="using:MirahelpBLEToolkit"
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 x:Class="MirahelpBLEToolkit.TabHostView">
+	<Grid RowDefinitions="Auto,*">
+		<StackPanel Orientation="Horizontal" Spacing="6" Margin="8">
+			<Button x:Name="BtnSignal" Content="" MinWidth="100"/>
+			<Button x:Name="BtnDevice" Content="" MinWidth="100"/>
+		</StackPanel>
+		<Grid Grid.Row="1">
+			<local:WidgetTile x:Name="SignalTile" IsVisible="True"/>
+			<ScrollViewer x:Name="DeviceTab" IsVisible="False">
+				<WrapPanel Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+					<local:WidgetTile x:Name="DetailsTile" Width="460" Height="320"/>
+					<local:WidgetTile x:Name="DeviceSignalTile" Width="460" Height="320"/>
+					<local:WidgetTile x:Name="ConnectTile" Width="460" Height="320"/>
+					<local:WidgetTile x:Name="HeartbeatTile" Width="460" Height="320"/>
+					<local:WidgetTile x:Name="ServicesTile" Width="460" Height="320"/>
+					<local:WidgetTile x:Name="CommunicationTile" Width="460" Height="320"/>
+					<local:WidgetTile x:Name="MessagesTile" Width="920" Height="320"/>
+				</WrapPanel>
+			</ScrollViewer>
+		</Grid>
+	</Grid>
+</UserControl>

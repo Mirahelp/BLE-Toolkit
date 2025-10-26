@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="using:MirahelpBLEToolkit"
+		mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		x:Class="MirahelpBLEToolkit.MainWindow"
+		Title="Mirahelp BLE Toolkit"
+		FontFamily="Consolas"
+		MinWidth="920">
+	<Grid RowDefinitions="Auto,Auto,*,Auto,*">
+		<Border Grid.Row="0" Margin="8,8,8,0">
+			<Image x:Name="AppLogo"
+				   Height="80"
+				   Stretch="Uniform"
+				   HorizontalAlignment="Left"
+				   Margin="5,5,5,5"/>
+		</Border>
+		<Grid Grid.Row="1" ColumnDefinitions="Auto,*,Auto" Margin="8,8,8,4">
+			<Button x:Name="BtnCapture" Content="Start capture" MinWidth="140" />
+			<Button Grid.Column="2" x:Name="BtnThemeToggle" MinWidth="80" HorizontalAlignment="Right"/>
+		</Grid>
+
+		<local:DeviceTableView x:Name="DeviceTable" Grid.Row="2"/>
+
+		<GridSplitter Grid.Row="3" Height="6" Background="#FFE0E0E0" HorizontalAlignment="Stretch"/>
+
+		<local:TabHostView x:Name="Tabs" Grid.Row="4"/>
+	</Grid>
+</Window>

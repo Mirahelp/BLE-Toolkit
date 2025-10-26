@@ -1,0 +1,60 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:local="using:MirahelpBLEToolkit"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="MirahelpBLEToolkit.HeartbeatWidget">
+	<Grid x:Name="RootHost" Background="Transparent">
+		<Grid RowDefinitions="Auto,*">
+			<Grid ColumnDefinitions="Auto,8,*,Auto" RowDefinitions="Auto">
+				<Border x:Name="StatusDot" Width="14" Height="14" CornerRadius="7" VerticalAlignment="Center"/>
+				<TextBlock Grid.Column="2" x:Name="TxtStatus" VerticalAlignment="Center"/>
+				<TextBlock Grid.Column="3" x:Name="TxtLatencySmall" VerticalAlignment="Center"/>
+			</Grid>
+
+			<Grid Grid.Row="1">
+				<Grid RowDefinitions="Auto,Auto" HorizontalAlignment="Center" VerticalAlignment="Center">
+					<Grid>
+						<local:HeartPulseControl x:Name="Heart" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+						<Border x:Name="BadgeFailures"
+								Width="30" Height="30"
+								CornerRadius="15"
+								HorizontalAlignment="Left"
+								VerticalAlignment="Bottom"
+								Margin="0,0,64,6"
+								IsVisible="False">
+							<ContentControl HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+								<TextBlock x:Name="TxtFailuresBadge"
+										   TextAlignment="Center"/>
+							</ContentControl>
+						</Border>
+						<Border x:Name="BadgeCountdown"
+								Width="34" Height="34"
+								CornerRadius="17"
+								HorizontalAlignment="Right"
+								VerticalAlignment="Bottom"
+								Margin="64,0,6,6"
+								IsVisible="False">
+							<ContentControl HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+								<TextBlock x:Name="TxtCountdownBadge"
+										   TextAlignment="Center"/>
+							</ContentControl>
+						</Border>
+					</Grid>
+
+					<StackPanel Grid.Row="1" Orientation="Vertical" Spacing="6" HorizontalAlignment="Center">
+						<TextBlock x:Name="TxtLatencyBig"
+								   Text="—"
+								   FontSize="24"
+								   FontWeight="SemiBold"
+								   Width="160"
+								   TextAlignment="Center"
+								   HorizontalAlignment="Center"/>
+						<TextBlock x:Name="TxtLastSuccess" HorizontalAlignment="Center"/>
+					</StackPanel>
+				</Grid>
+			</Grid>
+		</Grid>
+	</Grid>
+</UserControl>

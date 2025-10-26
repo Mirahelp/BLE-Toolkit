@@ -1,0 +1,64 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 x:Class="MirahelpBLEToolkit.DeviceTableView">
+	<ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+		<Grid RowDefinitions="Auto,*" Margin="0">
+			<Grid x:Name="HeaderGrid" Grid.Row="0" Margin="8,8,8,0" VerticalAlignment="Center">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="28"/>
+					<ColumnDefinition Width="220"/>
+					<ColumnDefinition Width="100"/>
+					<ColumnDefinition Width="160"/>
+					<ColumnDefinition Width="260"/>
+					<ColumnDefinition Width="200"/>
+					<ColumnDefinition Width="190"/>
+					<ColumnDefinition Width="190"/>
+				</Grid.ColumnDefinitions>
+
+				<StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+					<TextBlock Grid.Column="0" VerticalAlignment="Top"/>
+				</StackPanel>
+
+				<StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+					<TextBlock x:Name="TxtHeaderMac" Text="" FontWeight="Bold" VerticalAlignment="Center"/>
+					<Button x:Name="BtnFilterMac" Content="⌕" Width="24" Height="24" Background="Transparent" BorderThickness="0" Padding="0" VerticalAlignment="Center"/>
+				</StackPanel>
+
+				<StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+					<TextBlock x:Name="TxtHeaderRssi" Text="" FontWeight="Bold" VerticalAlignment="Center"/>
+					<Button x:Name="BtnFilterRssi" Content="⌕" Width="24" Height="24" Background="Transparent" BorderThickness="0" Padding="0" VerticalAlignment="Center"/>
+				</StackPanel>
+
+				<StackPanel Grid.Column="3" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+					<TextBlock x:Name="TxtHeaderStatus" Text="" FontWeight="Bold" VerticalAlignment="Center"/>
+					<Button x:Name="BtnFilterStatus" Content="⌕" Width="24" Height="24" Background="Transparent" BorderThickness="0" Padding="0" VerticalAlignment="Center"/>
+				</StackPanel>
+
+				<StackPanel Grid.Column="4" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+					<TextBlock x:Name="TxtHeaderName" Text="" FontWeight="Bold" VerticalAlignment="Center"/>
+					<Button x:Name="BtnFilterName" Content="⌕" Width="24" Height="24" Background="Transparent" BorderThickness="0" Padding="0" VerticalAlignment="Center"/>
+				</StackPanel>
+
+				<StackPanel Grid.Column="5" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+					<TextBlock x:Name="TxtHeaderManufacturer" Text="" FontWeight="Bold" VerticalAlignment="Center"/>
+					<Button x:Name="BtnFilterManufacturer" Content="⌕" Width="24" Height="24" Background="Transparent" BorderThickness="0" Padding="0" VerticalAlignment="Center"/>
+				</StackPanel>
+
+				<StackPanel Grid.Column="6" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+					<TextBlock x:Name="TxtHeaderFirstSeen" Text="" FontWeight="Bold" VerticalAlignment="Center"/>
+				</StackPanel>
+
+				<StackPanel Grid.Column="7" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+					<TextBlock x:Name="TxtHeaderLastSeen" Text="" FontWeight="Bold" VerticalAlignment="Center"/>
+				</StackPanel>
+			</Grid>
+
+			<ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="8,6,8,8">
+				<StackPanel x:Name="RowsPanel" />
+			</ScrollViewer>
+		</Grid>
+	</ScrollViewer>
+</UserControl>
