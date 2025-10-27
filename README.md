@@ -21,6 +21,7 @@ A desktop Bluetooth Low Energy toolkit built with Avalonia and .NET 9. It offers
 # Quick Start
 - Requirements
   - Windows 10/11 with Bluetooth LE hardware enabled
+    - You must have Microsoft Bluetooth LE Enumerator in device manager under Bluetooth
   - .NET 9 SDK
 
 [Releases](../../releases)
